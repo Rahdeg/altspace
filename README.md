@@ -129,7 +129,7 @@ Areas I want to continue focusing on in future projects:
 
 1. Clone the repository:
 ```bash
-git clone [your-repo-url]
+git clone [https://github.com/Rahdeg/altspace]
 cd ecomerce
 ```
 
@@ -166,6 +166,6 @@ npm run start
 
 ## Author
 
-- Website - [Your Name](https://raheem-dev.vercel.app/)
+- Website - [Adegbite Raheem](https://raheem-dev.vercel.app/)
 - Frontend Mentor - [@rahdeg](https://www.frontendmentor.io/profile/rahdeg)
-- GitHub - [@yourusername](https://github.com/Rahdeg)
+- GitHub - [@Rahdeg](https://github.com/Rahdeg)
