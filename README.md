@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Space Tourism Website Preview](./preview.jpg)
+![Space Tourism Website Preview](./public/preview.jpg)
 
 ### Links
 
