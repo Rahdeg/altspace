@@ -1,15 +1,15 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;700&family=Bellefair&display=swap');
-
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  --font-sans: var(--font-barlow-condensed);
   --font-mono: var(--font-geist-mono);
+  --font-bellefair: var(--font-bellefair);
+  --font-barlow-condensed: var(--font-barlow-condensed);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -17,7 +17,7 @@
   --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
   --color-sidebar-primary: var(--sidebar-primary);
   --color-sidebar-foreground: var(--sidebar-foreground);
-  --color-sidebar: var(--sidebar);
+  --color-sidebar: var(--sidebar-primary);
   --color-chart-5: var(--chart-5);
   --color-chart-4: var(--chart-4);
   --color-chart-3: var(--chart-3);
@@ -72,8 +72,8 @@
   --chart-5: oklch(0.769 0.188 70.08);
   --sidebar: oklch(0.985 0 0);
   --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.922 0 0);
+  --sidebar-primary-foreground: oklch(0.205 0 0);
   --sidebar-accent: oklch(0.97 0 0);
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
@@ -120,23 +120,48 @@
   }
   body {
     @apply bg-background text-foreground;
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: var(--font-barlow-condensed);
   }
 }
 
 @layer components {
   .font-bellefair {
-    font-family: 'Bellefair', serif;
+    font-family: var(--font-bellefair);
   }
   
   .font-barlow-condensed {
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: var(--font-barlow-condensed);
   }
 }
 
 @layer utilities {
   .animate-fade-in {
     animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .mobile-nav-enter {
+    animation: mobileNavFadeIn 0.3s ease-out;
+  }
+  
+  .mobile-nav-exit {
+    animation: mobileNavFadeOut 0.2s ease-in;
+  }
+  
+  .stars-bg {
+    background-image: 
+      radial-gradient(1px 1px at 25px 25px, #fff, transparent),
+      radial-gradient(1px 1px at 50px 50px, rgba(255,255,255,0.8), transparent),
+      radial-gradient(1px 1px at 75px 75px, #fff, transparent),
+      radial-gradient(1px 1px at 100px 100px, rgba(255,255,255,0.6), transparent),
+      radial-gradient(1px 1px at 125px 125px, #ddd, transparent),
+      radial-gradient(1px 1px at 150px 150px, #fff, transparent),
+      radial-gradient(1px 1px at 175px 175px, rgba(255,255,255,0.7), transparent),
+      radial-gradient(1px 1px at 200px 200px, #eee, transparent),
+      radial-gradient(1px 1px at 225px 225px, rgba(255,255,255,0.5), transparent),
+      radial-gradient(1px 1px at 250px 250px, #fff, transparent);
+    background-repeat: repeat;
+    background-size: 300px 300px;
+    animation: twinkle 30s linear infinite;
   }
   
   @keyframes fadeIn {
@@ -148,5 +173,28 @@
       opacity: 1;
       transform: translateY(0);
     }
+  }
+  
+  @keyframes mobileNavFadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes mobileNavFadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes twinkle {
+    0% { transform: translateY(0px); }
+    100% { transform: translateY(-300px); }
   }
 }

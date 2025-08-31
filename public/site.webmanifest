@@ -1,0 +1,33 @@
+{
+  "name": "Space Tourism",
+  "short_name": "Space Tourism",
+  "description": "Explore space destinations, meet the crew, and learn about space technology",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0B0D17",
+  "theme_color": "#0B0D17",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/assets/shared/logo.svg",
+      "sizes": "48x48",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/shared/logo.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/shared/logo.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["travel", "education", "technology"],
+  "lang": "en",
+  "dir": "ltr"
+}
