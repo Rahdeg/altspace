@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub Repository](https://github.com/rahdeg/space-tourism-website)
-- Live Site URL: [Live Demo](https://your-space-tourism-site.vercel.app)
+- Solution URL: [GitHub Repository](https://github.com/Rahdeg/altspace)
+- Live Site URL: [Live Demo](https://altspace-nine.vercel.app/)
 
 ## My process
 
@@ -118,8 +118,54 @@ Areas I want to continue focusing on in future projects:
 - [Radix UI Primitives](https://www.radix-ui.com/primitives) - In-depth documentation for accessible component primitives
 - [TypeScript Handbook](https://www.typescriptlang.org/docs/) - Crucial for implementing proper type safety throughout the application
 
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18+ (recommended: latest LTS)
+- npm, yarn, pnpm, or bun package manager
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone [your-repo-url]
+cd ecomerce
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+# or
+bun install
+```
+
+3. Run the development server:
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
+
+### Build for Production
+
+```bash
+npm run build
+npm run start
+```
+
 ## Author
 
-- Website - [Your Name](https://www.your-site.com)
+- Website - [Your Name](https://raheem-dev.vercel.app/)
 - Frontend Mentor - [@rahdeg](https://www.frontendmentor.io/profile/rahdeg)
-- GitHub - [@yourusername](https://github.com/rahdeg)
+- GitHub - [@yourusername](https://github.com/Rahdeg)
